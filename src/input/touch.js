@@ -34,6 +34,7 @@ export default class TouchInput extends Input {
 
     this.evTarget = TOUCH_TARGET_EVENTS;
     this.targetIds = {};
+    this.init();
   }
 
   handler(ev) {
