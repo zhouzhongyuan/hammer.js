@@ -49,6 +49,7 @@
     "qunitjs": "^2.0.0",
     "rollup": "^0.36.0",
     "rollup-plugin-babel": "^2.4.0",
+    "rollup-watch": "^4.3.1",
     "run-when-changed": "^1.2.0",
     "serve": "^1.4.0",
     "uglify-js": "^2.7.0"
@@ -60,7 +61,7 @@
   "scripts": {
     "bannerize": "bannerize hammer.js hammer.min.js",
     "connect": "serve -p 8000 ./",
-    "rollup": "rollup -c",
+    "rollup": "rollup --watch -c",
     "uglify": "uglifyjs hammer.js --source-map hammer.min.js.map -o hammer.min.js --stats",
     "string-replace": "node string-replace.js",
     "jshint": "jshint src/**/*.js tests/unit/*.js tests/unit/gestures/*.js --config .jshintrc --verbose --reporter=node_modules/jshint-stylish",
